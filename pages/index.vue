@@ -4,6 +4,10 @@
 <template>
   <div>
     <Topbar />
+    <SearchBar />
+    <TopNavbar />
+    <TopBanner />
+    <HotContent />
     <h1>爱购达 - 爱尔兰华人购物平台</h1>
   </div>
 </template>
