@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --primary-color: #1677FF;
+  --primary-color-hover: #1677FF;
+  --default-color: #000000;
+  --secondary-color: #000000;
+  --tertiary-color: #000000;
+  --primary-border-color: #e5e5e5;
+  --default-padding-x: 16px;
+  --control-item-bg-hover: rgba(0, 0, 0, 0.04);
+}
+
+
+

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '#imports'
-
+import 'assets/root.css'
 useHead({
   title: '爱尔兰华人二手交易、租房转租、吃喝玩乐论坛 - IrishCN',
   meta: [
@@ -17,6 +17,6 @@ useHead({
 </script>
 <template>
   <div>
-    IrishCN
+    <NuxtPage />
   </div>
 </template>
