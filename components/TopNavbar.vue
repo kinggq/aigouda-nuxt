@@ -1,49 +1,51 @@
 <script setup lang="ts">
 const menuItems = [
   {
-    title: '首页',
-    link: '/',
+    title: '租房',
+    link: '/rent',
     submenu: {
       categories: [
-        { title: '热门推荐', link: '/hot' },
-        { title: '最新上架', link: '/new' },
-        { title: '特惠活动', link: '/sale' }
+        { title: '整租', link: '/rent' },
+        { title: '合租', link: '/rent' },
+        { title: '短租', link: '/rent' }
       ],
       image: '#F3E5F5'
     }
   },
   {
-    title: '爱尔兰留学',
-    link: '/study',
+    title: '二手交易',
+    link: '/sale',
     submenu: {
       categories: [
-        { title: '院校介绍', link: '/schools' },
-        { title: '专业选择', link: '/majors' },
-        { title: '申请流程', link: '/apply' }
+        { title: '电子产品', link: '/sale' },
+        { title: '家具家电', link: '/sale' },
+        { title: '生活用品', link: '/sale' },
+        { title: '其他', link: '/sale' }
       ],
       image: '#E3F2FD'
     }
   },
   {
-    title: '生活服务',
-    link: '/life',
+    title: '论坛',
+    link: '/forum',
     submenu: {
       categories: [
-        { title: '住宿信息', link: '/housing' },
-        { title: '交通出行', link: '/transport' },
-        { title: '生活指南', link: '/guide' }
+        { title: '求职招聘', link: '/forum' },
+        { title: '生活服务', link: '/forum' },
+        { title: '活动聚会', link: '/forum' }
       ],
       image: '#E8F5E9'
     }
   },
   {
-    title: '关于我们',
+    title: '攻略',
     link: '/about',
     submenu: {
       categories: [
-        { title: '公司介绍', link: '/company' },
-        { title: '联系方式', link: '/contact' },
-        { title: '加入我们', link: '/join' }
+        { title: '爱尔兰留学', link: '/company' },
+        { title: '爱尔兰生活', link: '/contact' },
+        { title: '爱尔兰工作', link: '/join' },
+        { title: '爱尔兰旅游', link: '/join' },
       ],
       image: '#F1F8E9'
     }

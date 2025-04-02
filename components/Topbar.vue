@@ -4,7 +4,10 @@ const showDropdown = ref(false)
 <template>
   <div class="topbar">
     <div class="w-full flex justify-between items-center">
-      <div class="location">都柏林</div>
+      <div class="location">
+        <Icon name="heroicons:map-pin" class="location-icon" />
+        都柏林
+      </div>
       <div class="flex items-center gap-10">
         <div class="flex items-center gap-2">
           <div>
@@ -45,6 +48,29 @@ const showDropdown = ref(false)
 .location {
   color: var(--primary-color);
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.location-icon {
+  width: 16px;
+  height: 16px;
+  color: var(--primary-color);
+  animation: locationPulse 2s infinite;
+}
+@keyframes locationPulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 .topbar a {
   text-decoration: none;
