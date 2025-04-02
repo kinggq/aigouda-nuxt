@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
 const categories = [
   { id: 'all', label: '全部', icon: 'heroicons:square-2-stack' },
   { id: 'general', label: '综合讨论', icon: 'heroicons:chat-bubble-left-right' },
@@ -243,6 +247,10 @@ const handleScroll = () => {
   }
 }
 
+const handlePostClick = (post: Post) => {
+  router.push(`/forum/${post.id}`)
+}
+
 // 组件卸载时移除滚动监听
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
@@ -288,7 +296,7 @@ onUnmounted(() => {
       <!-- 帖子列表 -->
       <div v-else class="posts-list">
         <template v-if="filteredPosts.length > 0">
-          <div v-for="post in filteredPosts" :key="post.id" class="post-card">
+          <div v-for="post in filteredPosts" :key="post.id" class="post-card" @click="handlePostClick(post)">
             <div class="post-header">
               <div class="author-info">
                 <div class="avatar" :style="{ backgroundColor: post.author.avatar }">

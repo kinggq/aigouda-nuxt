@@ -26,6 +26,19 @@ const menuItems = [
     }
   },
   {
+    title: '帮助捎带',
+    link: '/carry',
+    submenu: {
+      categories: [
+        { title: '文件', link: '/carry' },
+        { title: '生活用品', link: '/carry' },
+        { title: '包箱', link: '/carry' }
+      ],
+      image: '#FFEBEE'
+    }
+  },
+  
+  {
     title: '论坛',
     link: '/forum',
     submenu: {
@@ -39,13 +52,13 @@ const menuItems = [
   },
   {
     title: '攻略',
-    link: '/about',
+    link: '/guide',
     submenu: {
       categories: [
-        { title: '爱尔兰留学', link: '/company' },
-        { title: '爱尔兰生活', link: '/contact' },
-        { title: '爱尔兰工作', link: '/join' },
-        { title: '爱尔兰旅游', link: '/join' },
+        { title: '爱尔兰留学', link: '/guide' },
+        { title: '爱尔兰生活', link: '/guide' },
+        { title: '爱尔兰工作', link: '/guide' },
+        { title: '爱尔兰旅游', link: '/guide' },
       ],
       image: '#F1F8E9'
     }

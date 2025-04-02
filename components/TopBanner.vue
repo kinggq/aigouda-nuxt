@@ -10,25 +10,25 @@ const slides = [
     title: '探索爱尔兰',
     subtitle: '发现翡翠岛的无限魅力',
     color: '#E8F5E9',
-    link: '/ad'
+    link: '/business'
   },
   {
     title: '文化体验',
     subtitle: '感受独特的爱尔兰文化',
     color: '#F3E5F5',
-    link: '/ad'
+    link: '/business'
   },
   {
     title: '美食之旅',
     subtitle: '品味地道爱尔兰美食',
     color: '#E3F2FD',
-    link: '/ad'
+    link: '/business'
   },
   {
     title: '自然风光',
     subtitle: '探索壮丽的自然景观',
     color: '#F1F8E9',
-    link: '/ad'
+    link: '/business'
   }
 ]
 </script>

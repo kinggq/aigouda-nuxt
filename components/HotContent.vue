@@ -3,32 +3,32 @@ const hotItems = [
   {
     title: '都柏林大学',
     image: '#E3F2FD',
-    link: '/school/ucd'
+    link: '/guide'
   },
   {
     title: '圣三一学院',
     image: '#E8F5E9',
-    link: '/school/tcd'
+    link: '/guide'
   },
   {
     title: '市中心公寓',
     image: '#F3E5F5',
-    link: '/house/center'
+    link: '/guide'
   },
   {
     title: '爱尔兰传统餐厅',
     image: '#F1F8E9',
-    link: '/food/traditional'
+    link: '/guide'
   },
   {
     title: '购物中心',
     image: '#E3F2FD',
-    link: '/shopping/mall'
+    link: '/guide'
   },
   {
     title: '交通指南',
     image: '#E8F5E9',
-    link: '/transport/guide'
+    link: '/guide'
   }
 ]
 
@@ -36,32 +36,32 @@ const featuredItems = [
   {
     title: '留学生活',
     image: '#F3E5F5',
-    link: '/life/student'
+    link: '/guide'
   },
   {
     title: '文化体验',
     image: '#F1F8E9',
-    link: '/culture/experience'
+    link: '/guide'
   },
   {
     title: '美食地图',
     image: '#E3F2FD',
-    link: '/food/map'
+    link: '/guide'
   },
   {
     title: '住宿攻略',
     image: '#E8F5E9',
-    link: '/housing/guide'
+    link: '/guide'
   },
   {
     title: '购物推荐',
     image: '#F3E5F5',
-    link: '/shopping/recommend'
+    link: '/guide'
   },
   {
     title: '旅游景点',
     image: '#F1F8E9',
-    link: '/travel/spots'
+    link: '/guide'
   }
 ]
 
