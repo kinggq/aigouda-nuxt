@@ -32,7 +32,6 @@ const menuItems = [
 .footer {
   background-color: #f8f9fa;
   padding: 40px 0;
-  margin-top: 60px;
 }
 
 .footer-content {

@@ -24,7 +24,7 @@ const showDropdown = ref(false)
           <Transition name="fade">
             <div v-if="showDropdown" class="dropdown-menu">
               <NuxtLink to="/account" class="dropdown-item">我的账户</NuxtLink>
-              <NuxtLink to="/favorites" class="dropdown-item">我的收藏</NuxtLink>
+              <a href="#" class="dropdown-item">退出登录</a>
             </div>
           </Transition>
         </div>

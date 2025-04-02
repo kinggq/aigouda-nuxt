@@ -96,6 +96,8 @@ const checkScrollButtons = (container: HTMLElement) => {
   const { scrollLeft, scrollWidth, clientWidth } = container
   showLeftButton.value = scrollLeft > 0
   showRightButton.value = scrollLeft < scrollWidth - clientWidth - 1
+  showLeftButton2.value = scrollLeft > 0
+  showRightButton2.value = scrollLeft < scrollWidth - clientWidth - 1
 }
 
 const handleScroll = (container: HTMLElement) => {
@@ -104,13 +106,13 @@ const handleScroll = (container: HTMLElement) => {
 
 onMounted(() => {
   if (scrollContainer.value) {
-    scrollContainer.value.addEventListener('wheel', (e) => handleWheel(e, scrollContainer.value!))
+    // scrollContainer.value.addEventListener('wheel', (e) => handleWheel(e, scrollContainer.value!))
     scrollContainer.value.addEventListener('scroll', () => handleScroll(scrollContainer.value!))
     checkScrollButtons(scrollContainer.value)
   }
   
   if (scrollContainer2.value) {
-    scrollContainer2.value.addEventListener('wheel', (e) => handleWheel(e, scrollContainer2.value!))
+    // scrollContainer2.value.addEventListener('wheel', (e) => handleWheel(e, scrollContainer2.value!))
     scrollContainer2.value.addEventListener('scroll', () => handleScroll(scrollContainer2.value!))
     checkScrollButtons(scrollContainer2.value)
   }
@@ -312,11 +314,11 @@ onUnmounted(() => {
 }
 
 .scroll-button.left {
-  left: -20px;
+  left: 0;
 }
 
 .scroll-button.right {
-  right: -20px;
+  right: 0;
 }
 
 .arrow-left,
