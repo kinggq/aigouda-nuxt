@@ -1,67 +1,78 @@
 <script setup lang="ts">
-import TCD from '../assets/TCD.png'
+import TCD from '../assets/tcd.jpg'
+import UCD from '../assets/ucd.jpg'
+import Iphone from '../assets/iphone.png'
+import Job from '../assets/job.png'
+import Bag from '../assets/bag.png'
+import Jewelry from '../assets/jewelry.png'
+import Snack from '../assets/snacks.png'
+import Irland from '../assets/a1.jpg'
+import MS from '../assets/ms.jpg'
+import Life from '../assets/g.png'
+import Luggage from '../assets/luggage.png'
+import Snack2 from '../assets/lsf.png'
 const hotItems = [
   {
     title: '都柏林大学',
-    image: TCD,
+    image: UCD,
     link: '/guide'
   },
   {
     title: '圣三一学院',
-    image: '#E8F5E9',
+    image: TCD,
     link: '/guide'
   },
   {
-    title: '市中心公寓',
-    image: '#F3E5F5',
+    title: '电子产品',
+    image: Iphone,
     link: '/guide'
   },
   {
-    title: '爱尔兰传统餐厅',
-    image: '#F1F8E9',
+    title: '高薪招聘',
+    image: Job,
     link: '/guide'
   },
   {
-    title: '购物中心',
-    image: '#E3F2FD',
+    title: '名牌包包',
+    image: Bag,
     link: '/guide'
   },
   {
-    title: '交通指南',
-    image: '#E8F5E9',
+    title: '首饰',
+    image: Jewelry,
     link: '/guide'
   }
 ]
 
 const featuredItems = [
   {
-    title: '留学生活',
-    image: '#E3F2FD',
+    title: '零食大礼包',
+    image: Snack,
     link: '/guide'
   },
   {
     title: '文化体验',
-    image: '#F1F8E9',
+    image: Irland,
     link: '/guide'
   },
   {
     title: '美食地图',
-    image: '#E3F2FD',
+    image: MS,
     link: '/guide'
   },
   {
-    title: '住宿攻略',
-    image: '#E8F5E9',
+    title: '生活用品',
+    image: Life,
     link: '/guide'
   },
   {
-    title: '购物推荐',
-    image: '#F3E5F5',
+    title: '螺蛳粉',
+    image: Snack2,
     link: '/guide'
   },
   {
-    title: '旅游景点',
-    image: '#F1F8E9',
+    title: '物品捎带',
+    image: Luggage,
     link: '/guide'
   }
 ]
@@ -156,7 +167,7 @@ onUnmounted(() => {
           >
             <div class="item-image" :style="{ backgroundColor: item.image }">
               <!-- 这里可以放置图片 -->
-               <img v-if="item.image.startsWith('/')" class="item-image" :src="item.image" alt="item.title" >
+               <img v-if="item.image.startsWith('/')" class="object-cover" :src="item.image" alt="item.title" >
             </div>
             <div class="item-title">{{ item.title }}</div>
           </NuxtLink>
@@ -194,6 +205,7 @@ onUnmounted(() => {
           >
             <div class="item-image" :style="{ backgroundColor: item.image }">
               <!-- 这里可以放置图片 -->
+              <img v-if="item.image.startsWith('/')" :src="item.image" alt="item.title" >
             </div>
             <div class="item-title">{{ item.title }}</div>
           </NuxtLink>
@@ -272,6 +284,13 @@ onUnmounted(() => {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+}
+
+.item-image img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .content-item:hover .item-image {
