@@ -289,16 +289,8 @@ const copyToClipboard = async (text: string, type: 'wechat' | 'phone') => {
         <p>加载中...</p>
       </div>
 
-      <!-- 加载更多状态 -->
-      <div v-if="isLoadingMore" class="loading-more">
-        <div class="loading-spinner">
-          <Icon name="heroicons:arrow-path" class="animate-spin" />
-        </div>
-        <p>加载更多...</p>
-      </div>
-
       <!-- 房源列表 -->
-      <div v-else class="houses-grid">
+      <div class="houses-grid">
         <template v-if="filteredHouses.length > 0">
           <div v-for="house in filteredHouses" :key="house.id" class="house-card">
             <!-- 图片轮播 -->
@@ -497,6 +489,14 @@ v-for="(_, index) in house.images" :key="index"
         </div>
       </div>
     </Transition>
+
+    <!-- 加载更多状态 -->
+    <div v-if="isLoadingMore" class="loading-more">
+      <div class="loading-spinner">
+        <Icon name="heroicons:arrow-path" class="animate-spin" />
+      </div>
+      <p>加载更多...</p>
+    </div>
   </div>
 </template>
 

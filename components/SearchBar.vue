@@ -67,7 +67,7 @@ const handleSearchBlur = (event: FocusEvent) => {
   <div class="search-bar">
     <!-- Logo -->
     <div class="logo">
-      <NuxtLink to="/" class="logo-text">爱购达</NuxtLink>
+      <NuxtLink to="/" class="logo-text">Aigouda</NuxtLink>
     </div>
 
     <!-- 搜索区域 -->
