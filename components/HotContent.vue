@@ -167,7 +167,7 @@ onUnmounted(() => {
           >
             <div class="item-image" :style="{ backgroundColor: item.image }">
               <!-- 这里可以放置图片 -->
-               <img v-if="item.image.startsWith('/')" class="object-cover" :src="item.image" alt="item.title" >
+               <img class="object-cover" :src="item.image" alt="item.title" >
             </div>
             <div class="item-title">{{ item.title }}</div>
           </NuxtLink>
@@ -205,7 +205,7 @@ onUnmounted(() => {
           >
             <div class="item-image" :style="{ backgroundColor: item.image }">
               <!-- 这里可以放置图片 -->
-              <img v-if="item.image.startsWith('/')" :src="item.image" alt="item.title" >
+              <img :src="item.image" alt="item.title" >
             </div>
             <div class="item-title">{{ item.title }}</div>
           </NuxtLink>
