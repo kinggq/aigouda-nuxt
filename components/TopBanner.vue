@@ -4,32 +4,35 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-
+import Irland1 from '../assets/Irland1.jpg'
+import Irland2 from '../assets/Irland2.jpg'
 const slides = [
   {
     title: '探索爱尔兰',
     subtitle: '发现翡翠岛的无限魅力',
     color: '#E8F5E9',
+    image: Irland1,
     link: '/business'
   },
   {
     title: '文化体验',
     subtitle: '感受独特的爱尔兰文化',
     color: '#F3E5F5',
+    image: Irland2,
     link: '/business'
   },
-  {
-    title: '美食之旅',
-    subtitle: '品味地道爱尔兰美食',
-    color: '#E3F2FD',
-    link: '/business'
-  },
-  {
-    title: '自然风光',
-    subtitle: '探索壮丽的自然景观',
-    color: '#F1F8E9',
-    link: '/business'
-  }
+  // {
+  //   title: '美食之旅',
+  //   subtitle: '品味地道爱尔兰美食',
+  //   color: '#E3F2FD',
+  //   link: '/business'
+  // },
+  // {
+  //   title: '自然风光',
+  //   subtitle: '探索壮丽的自然景观',
+  //   color: '#F1F8E9',
+  //   link: '/business'
+  // }
 ]
 </script>
 
@@ -48,7 +51,7 @@ const slides = [
       class="banner-swiper"
     >
       <SwiperSlide v-for="(slide, index) in slides" :key="index">
-        <div class="slide-content" :style="{ backgroundColor: slide.color }">
+        <div class="slide-content" :style="{ background: `url(${slide.image}) no-repeat center center`, backgroundSize: 'cover' }">
           <div class="slide-text">
             <h2 class="slide-title">{{ slide.title }}</h2>
             <p class="slide-subtitle">{{ slide.subtitle }}</p>
