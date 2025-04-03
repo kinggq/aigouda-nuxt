@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import TCD from '../assets/tcd.jpg'
 import UCD from '../assets/ucd.jpg'
-import Iphone from '../assets/iphone.png'
+import Iphone from '../assets/iPhone.png'
 import Job from '../assets/job.png'
 import Bag from '../assets/bag.png'
 import Jewelry from '../assets/jewelry.png'
