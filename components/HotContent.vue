@@ -1,8 +1,9 @@
 <script setup lang="ts">
+import TCD from '../assets/TCD.png'
 const hotItems = [
   {
     title: '都柏林大学',
-    image: '#E3F2FD',
+    image: TCD,
     link: '/guide'
   },
   {
@@ -35,7 +36,7 @@ const hotItems = [
 const featuredItems = [
   {
     title: '留学生活',
-    image: '#F3E5F5',
+    image: '#E3F2FD',
     link: '/guide'
   },
   {
@@ -155,6 +156,7 @@ onUnmounted(() => {
           >
             <div class="item-image" :style="{ backgroundColor: item.image }">
               <!-- 这里可以放置图片 -->
+               <img v-if="item.image.startsWith('/')" class="item-image" :src="item.image" alt="item.title" >
             </div>
             <div class="item-title">{{ item.title }}</div>
           </NuxtLink>

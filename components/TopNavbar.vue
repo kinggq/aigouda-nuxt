@@ -13,6 +13,17 @@ const menuItems = [
     }
   },
   {
+    title: '招聘',
+    link: '/job',
+    submenu: {
+      categories: [
+        { title: '全职', link: '/job' },
+        { title: '兼职', link: '/job' }
+      ],
+      image: '#E3F2FD'
+    }
+  },
+  {
     title: '二手交易',
     link: '/sale',
     submenu: {
