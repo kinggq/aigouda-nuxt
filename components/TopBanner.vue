@@ -92,13 +92,13 @@ const slides = [
 .slide-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #333;
+  color: #FFF;
   margin-bottom: 1rem;
 }
 
 .slide-subtitle {
   font-size: 1.2rem;
-  color: #666;
+  color: #FFF;
   margin-bottom: 2rem;
 }
 
